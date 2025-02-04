@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-lg">
+            <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Recruiter Registration</h1>
+
+            <form class="space-y-6">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name<span class="text-red-500">*</span></label>
+                    <input type="text" id="fullName" name="fullName" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email<span class="text-red-500">*</span></label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Mobile Number -->
+                <div>
+                    <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number<span class="text-red-500">*</span></label>
+                    <input type="tel" id="mobile" name="mobile" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your mobile number" required>
+                </div>
+
+                <!-- Current Company Name -->
+                <div>
+                    <label for="companyName" class="block text-sm font-medium text-gray-700">Current Company Name</label>
+                    <input type="text" id="companyName" name="companyName" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your company name">
+                </div>
+
+                <!-- Current Location -->
+                <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700">Current Location</label>
+                    <input type="text" id="location" name="location" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your location">
+                </div>
+
+                <!-- Designation -->
+                <div>
+                    <label for="designation" class="block text-sm font-medium text-gray-700">Your Designation</label>
+                    <input type="text" id="designation" name="designation" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your designation">
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password<span class="text-red-500">*</span></label>
+                    <input type="password" id="password" name="password" class="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Company Verification -->
+                <div>
+                    <label for="companyVerification" class="block text-sm font-medium text-gray-700">Company Verification</label>
+                    <input type="file" id="companyVerification" name="companyVerification" accept=".pdf,.doc,.docx" class="mt-1 block w-full text-gray-500 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    <p class="text-xs text-gray-500 mt-1">File format - PDF, DOC, DOCX | File size - Min 5mb & Max 20mb</p>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="consent" name="consent" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="consent" class="ml-2 text-sm text-gray-700">Send me important updates & promotions via SMS, email, and WhatsApp</label>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <p class="text-xs text-gray-500 text-center">By clicking Register, you agree to the <a href="#" class="text-blue-500 underline">Terms and Conditions</a> & <a href="#" class="text-blue-500 underline">Privacy Policy</a> of AlwaysApply.com</p>
+
+                <!-- Register Button -->
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Register Now</button>
+
+                <!-- Social Login -->
+                <div class="flex justify-center items-center mt-6 space-x-4">
+                    <button class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" class="h-5">
+                    </button>
+                    <button class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="LinkedIn" class="h-5">
+                    </button>
+                    <button class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111393.png" alt="Facebook" class="h-5">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
